@@ -1,0 +1,170 @@
+body { 
+    background:  url(star1.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#hover:hover {
+  border: black;
+  cursor: pointer;
+}
+
+h1 {
+  color: gold;
+  font-size: 50px;
+  opacity: 1;
+}
+
+.card {
+  border-radius: 50px;
+  border-color: white;
+}
+
+.x {
+color: gold;
+background-color: black;
+border-color: gold;
+z-index: 10;
+}
+
+.x:hover {
+color: black;
+background-color: gold;
+border-color: transparent;
+}
+
+.x:active {
+color: gold;
+}
+
+/*========================================================================
+    Animation for films data
+==========================================================================*/
+
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+ 
+    z-index: 1;
+  }
+  
+  .star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: gold;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align:justify;
+  }
+  
+  .crawl {
+    position: relative;
+    top: 11111px;
+    transform-origin: 200% 100%;
+    animation: crawl 80s linear infinite;
+  }
+  
+  .crawl>.title {
+    font-size: 90%;
+    text-align: center;
+  }
+  
+  .crawl>.title h1 {
+    margin: 0 0 50px;
+    text-transform: uppercase;
+  }
+  
+  @keyframes crawl {
+    0% {
+      top: -50px;
+      transform: rotateX(20deg) translateZ(0);
+    }
+    100% {
+      top: -7000px;
+      transform: rotateX(15deg) translateZ(-1800px);
+    }
+  }
+
+/*==========================================================
+MEDIA QUERIES
+===========================================================*/
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+    
+    .center {
+        position: relative;
+        left: 217px;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 75px;
+    }
+    
+    .center {
+        position: relative;
+        left:425px;
+    }
+    div {
+        font-size: 30px;
+    }
+    
+    .films {
+        font-size: 100px;
+    }
+    
+    .filmsDiv {
+        position: relative;
+        left: -200px;
+    }
+
+    .crawl {
+      font-size: 45px;
+    }
+    
+    h4 {
+        font-size:35px ;
+    }
+    #back {
+        width: 100px;
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    
+    #people {
+        height: 60px;
+        width: 100px;
+        font-size: 20px;
+        font-weight: 500;
+        border-width: 2px;
+    }
+    
+    #films {
+        height: 60px;
+        width: 100px;
+        font-size: 20px;
+        font-weight: 500;
+        border-width: 2px;
+    }
+}
+
+
+
+
